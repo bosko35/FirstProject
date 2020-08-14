@@ -3,8 +3,46 @@
 <head>
 <title>ogrendiklerimiz</title>
 <body>
-    <h1>ogrendiklerimiz</h1>
+    <h1>YAZILIM BLOGUM</h1>
     <!--<br>--> 
+    <!--table-->
+    <fieldset>
+        <legend>
+            <h2>BILGILERIM</h2>
+        </legend>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>              
+            </thead>
+            <div style="margin-top:10px"></div>
+            <tbody>
+                    <tr>
+                        <td>Yigithan Milli</td>
+                        <td>millyigithan@gmail.com</td>
+                        <td>19</td>
+                    </tr>       
+            </div>
+            </tbody>
+        </table>  
+    </fieldset>
+    <fieldset>
+        <legend>
+            <h2>Sosyal Medya</h2>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/accounts/login/?next=/yigithanmilli/" target="_blank">'Instagram'</a>
+            </li>
+        </ul>    
+        </legend>
+
+    </fieldset>
+    <!--Forms-->
+    <br>
+    <h2>Ogrendiklerim</h2>
     <fieldset>
         <legend>13.08.2020</legend>       
         <ol>
@@ -18,19 +56,81 @@
     </fieldset>
     <br>
     <fieldset>
-        <legend>14.08.2020</legend>       
+        <legend>14.08.2020</legend>   
+        <!--for list-->    
         <ol>
             <li>
-                html acmayi ogrendik2
+                ul-label-input type- div kullanimini ogrendik
             </li> 
             <li>
-                html ile ilerledik
+                <strong>yazi stillerini ogrendik </strong>
             </li>
             <li>
-                merhaba
+                blogumuzu ilerlettik
             </li>
-        </ol>
-    </fieldset>  
+            <li>
+                a href kullanimini ilerlettik
+            </li>
+        </ol>          
+    </fieldset> 
+    <br>
+    <h1>Soru-Cevap</h1>
+    <fieldset>
+        <legend>
+            <h2>Bana onerin var mi?</h2>
+        </legend>
+        <div>
+                <select name="oneri">
+                    <option value="evet">evet</option>
+                    <option value="hayir">hayir</option>
+                </select>
+            <hr>
+            <br>
+                <label>Eger onerin varsa</label>             
+                <input type="text" name="mesaj"
+                placeholder="Buraya mesajini girebilirsin">
+        </div>    
+    </fieldset> 
+    <fieldset>
+        <legend>
+            <h2>Senin siran</h2>
+        </legend>
+        <div>
+            <label>Kac yasindasin:</label>
+            <input type="number" name="age"
+            value="18">
+        </div>
+        <br>
+        <div>
+            <label>Cinsiyetin ne:</label>
+            <select name="gender">
+            <option value="male">Erkek</option>  
+            <option value="female">Kadin</option> 
+            <option value="other">Diger</option>   
+            </select>
+        </div>
+        <br>
+        <div>
+            <label>Dogum tarihin:</label>
+            <input type="date" name="birthday">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>
+            <h2>Meslek tercihi</h2>
+        </legend>
+        <form action="https://www.kariyer.net/pozisyonlar/tip+doktoru+hekim/nedir" method="GET" target="_blank">
+        <label>Hayalindeki meslek?</label>
+        <input type="text" name="Hayal ettigim meslek" placeholder="Buraya yazabilirsin">
+        </form>    
+        <br>
+        <h3>Dipnot</h3>
+        <hr>
+        <h3>Doktor yaz</h3>
+    </fieldset>
+    <br>
+    <input type="submit" name="submit"
+    value="Gonder">
 </body>
 </head>
 </html>
